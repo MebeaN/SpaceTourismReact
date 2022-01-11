@@ -7,6 +7,7 @@ import pilot from "../../assets/images/crew/image-victor-glover.webp"
 import { data } from "./data";
 import CircularButtons from "./CircularButtons";
 import ImageColumn from "../ImageColumn";
+import Text from "../Text";
 function Crew() {
     const images = {
         commander, pilot,engineer,specialist
@@ -36,11 +37,14 @@ function Crew() {
             <div className="row">
                 <div className="col">
                     
-                    <p id="career">{state.career}</p>
+                    <Text id="career" text={state.career}/>
+                    <Text id="name" text={state.name}/>
+                    <Text id="para" text={state.para}/>
+                    {/* <p id="career">{state.career}</p>
                     <p id="name">{state.name}</p>
                     <p id="para">
                     {state.para}
-                    </p>
+                    </p> */}
 
                     <div className="dotLinks">
                         <CircularButtons name="commander" onClick={btnClick}/>

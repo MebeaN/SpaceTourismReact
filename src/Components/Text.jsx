@@ -2,7 +2,7 @@ import React from 'react'
 
 function Text(props) {
     return (
-        <p className="name">{props.text}</p>
+        <p className={props.className} id={props.id}>{props.text}</p>
     )
 }
 

@@ -8,7 +8,7 @@ import europa from "../../assets/images/destination/image-europa.png"
 import titan from "../../assets/images/destination/image-titan.png"
 import data from './data';
 import ImageColumn from "../ImageColumn";
-
+import Text from "../Text";
 
 function Destination() {
     const images = {
@@ -48,10 +48,7 @@ function Destination() {
                     
                     <h1 className="mt-5" id="name">{state.name}</h1>
                     
-
-                    <p className="detail">
-                        {state.detail}
-                    </p>
+                    <Text className="detail" text={state.detail}/>
 
                     <hr className="mt-5" />
 

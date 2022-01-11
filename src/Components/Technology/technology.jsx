@@ -5,8 +5,8 @@ import capsule from "../../assets/images/technology/image-space-capsule-portrait
 import spaceport from "../../assets/images/technology/image-spaceport-portrait.jpg";
 import ImageColumn from '../ImageColumn';
 import { data } from './data';
-import numButtons from './numButtons';
-
+import NumButtons from './NumButtons';
+import Text from '../Text';
 function Technology() {
     const images = {vehicle, spaceport, capsule}
     const [state, setState] = useState({
@@ -33,19 +33,21 @@ function Technology() {
             <div className="col-md-8">
                 <div className="row">
                 <div className="col-md-2">
-                    
-                    <numButtons name="vehicle" onClick={btnClick} number="1"/>
-                    <numButtons name="capsule" onClick={btnClick} number="2"/>
-                    <numButtons name="spaceport" onClick={btnClick} number="3"/>
-                    
+                    <ul>
+                        <NumButtons name="vehicle" onClick={btnClick} number="1"/>
+                        <NumButtons name="capsule" onClick={btnClick} number="2"/>
+                        <NumButtons name="spaceport" onClick={btnClick} number="3"/>
+                    </ul>
                 </div>
 
                 <div className="col-md-10">
                     <p>The terminology...</p>
-                    <p className="name">{state.name}</p>
-                    <p className="para">
-                    {state.para}
-                    </p>
+                    <Text className="name" text={state.name}/>
+                    <Text className="para" text={state.para}/>
+                    {/* <p className="name">{state.name}</p>
+                    <p className="para"> */}
+                    {/* {state.para}
+                    </p> */}
                 </div>
                 </div>
             </div>

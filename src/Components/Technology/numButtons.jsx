@@ -1,9 +1,9 @@
 import React from 'react'
 
-function numButtons(props) {
+function NumButtons(props) {
     return (
-        <button className='tech-btns' name={props.name} onClick={props.btnClick}>{props.number}</button>
+        <button className='tech-btns' name={props.name} onClick={props.onClick}>{props.number}</button>
     )
 }
 
-export default numButtons
+export default NumButtons
