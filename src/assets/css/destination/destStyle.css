@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+  
+body{
+  overflow-x: hidden;
+  background-image: url('../../images/destination/background-destination-desktop.jpg');
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+nav {
+  backdrop-filter: blur(20px);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin-right: 2%;
+}
+
+#logoImg {
+  margin-left: 1%;
+}
+
+.name{
+  font-size: 120px;
+}
+
+.detail {
+  font-size: 15px;
+  width: 75%;
+  margin-bottom: 100px;
+}
+
+#num {
+  color: grey;
+}
+
+.tabLinks > button {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  font-size: 20px;
+}
+
+.infoTitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+.info {
+    font-size: 30px;
+    
+}
+
+.col {
+  float: left;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@200&display=swap');
+
+body{
+  overflow-x: hidden;
+  background-image: url('../../images/crew/background-crew-desktop.jpg');
+  color: white;
+  font-family: 'Lora', serif;
+  /* font-family: 'Poppins', sans-serif; */
+  text-transform: uppercase;
+}
+
+nav {
+  align-items: center;
+  padding: 10px 0px;
+  backdrop-filter: blur(20px);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin-right: 2%;
+}
+
+#logoImg {
+  margin-left: 1%;
+}
+
+.exploreBtn {
+  margin-top: 120px;
+  background-color: white;
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  padding-top: 100px;
+  font-size: 30px;
+  margin-left: 120px;
+}
+
+.col {
+  float: left;
+}
+
+#name{
+  font-size: 50px;
+}
+
+#career {
+  font-size: 30px;
+  color: gray;
+}
+
+#firstLine{
+  font-size: 25px;
+}
+
+.links {
+  position: relative;
+  left: 50%;
+}
+
+#para {
+  font-size: 15px;
+  width: 75%;
+}
+
+.dotLinks > button {
+  border-radius: 50%;
+  border: 0;
+  color: gray;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.img {
+  margin-top: -100px;
+  
+}
+
+#meet {
+  color: grey;
+}
