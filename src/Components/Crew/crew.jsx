@@ -40,11 +40,6 @@ function Crew() {
                     <Text id="career" text={state.career}/>
                     <Text id="name" text={state.name}/>
                     <Text id="para" text={state.para}/>
-                    {/* <p id="career">{state.career}</p>
-                    <p id="name">{state.name}</p>
-                    <p id="para">
-                    {state.para}
-                    </p> */}
 
                     <div className="dotLinks">
                         <CircularButtons name="commander" onClick={btnClick}/>

@@ -44,10 +44,6 @@ function Technology() {
                     <p>The terminology...</p>
                     <Text className="name" text={state.name}/>
                     <Text className="para" text={state.para}/>
-                    {/* <p className="name">{state.name}</p>
-                    <p className="para"> */}
-                    {/* {state.para}
-                    </p> */}
                 </div>
                 </div>
             </div>

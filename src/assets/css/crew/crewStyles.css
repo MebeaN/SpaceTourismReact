@@ -80,3 +80,7 @@ a{
 #meet {
   color: grey;
 }
+
+.active {
+  background-color: red;
+}
