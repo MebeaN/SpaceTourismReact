@@ -6,6 +6,7 @@ import engineer from "../../assets/images/crew/image-anousheh-ansari.webp"
 import pilot from "../../assets/images/crew/image-victor-glover.webp"
 import { data } from "./data";
 import CircularButtons from "./CircularButtons";
+import ImageColumn from "../ImageColumn";
 function Crew() {
     const images = {
         commander, pilot,engineer,specialist
@@ -49,9 +50,7 @@ function Crew() {
                     </div>
                 </div>
         
-                <div className="col img">
-                    <img src={state.img} alt=""/>
-                </div>
+                <ImageColumn img={state.img} className="col"/>
             </div>
         </div>
     )

@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { propTypes } from 'react-bootstrap/esm/Image';
 import '../../assets/css/technology/techStyle.css';
 import vehicle from "../../assets/images/technology/image-launch-vehicle-portrait.jpg";
 import capsule from "../../assets/images/technology/image-space-capsule-portrait.jpg";
 import spaceport from "../../assets/images/technology/image-spaceport-portrait.jpg";
+import ImageColumn from '../ImageColumn';
 import { data } from './data';
 
 function Technology() {
@@ -48,8 +50,8 @@ function Technology() {
                 </div>
             </div>
 
-            <div className="col-md-4">
-                <img src={state.img} alt=""/>
+            <div className='col-md-4'>
+                <ImageColumn img={state.img} />    
             </div>
 
 
