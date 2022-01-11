@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { propTypes } from 'react-bootstrap/esm/Image';
 import '../../assets/css/technology/techStyle.css';
 import vehicle from "../../assets/images/technology/image-launch-vehicle-portrait.jpg";
 import capsule from "../../assets/images/technology/image-space-capsule-portrait.jpg";
 import spaceport from "../../assets/images/technology/image-spaceport-portrait.jpg";
 import ImageColumn from '../ImageColumn';
 import { data } from './data';
+import numButtons from './numButtons';
 
 function Technology() {
     const images = {vehicle, spaceport, capsule}
@@ -33,11 +33,11 @@ function Technology() {
             <div className="col-md-8">
                 <div className="row">
                 <div className="col-md-2">
-                    <ul>
-                    <button className='tech-btns' name='vehicle' onClick={btnClick}>1</button><br />
-                    <button className='tech-btns' name='capsule' onClick={btnClick}>2</button><br />
-                    <button className='tech-btns' name='spaceport' onClick={btnClick}>3</button>
-                    </ul>
+                    
+                    <numButtons name="vehicle" onClick={btnClick} number="1"/>
+                    <numButtons name="capsule" onClick={btnClick} number="2"/>
+                    <numButtons name="spaceport" onClick={btnClick} number="3"/>
+                    
                 </div>
 
                 <div className="col-md-10">
