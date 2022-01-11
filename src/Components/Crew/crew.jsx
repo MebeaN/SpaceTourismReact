@@ -5,6 +5,7 @@ import specialist from "../../assets/images/crew/image-mark-shuttleworth.webp"
 import engineer from "../../assets/images/crew/image-anousheh-ansari.webp"
 import pilot from "../../assets/images/crew/image-victor-glover.webp"
 import { data } from "./data";
+import CircularButtons from "./CircularButtons";
 function Crew() {
     const images = {
         commander, pilot,engineer,specialist
@@ -41,10 +42,10 @@ function Crew() {
                     </p>
 
                     <div className="dotLinks">
-                        <button name="commander" onClick={btnClick}></button>
-                        <button name="pilot" onClick={btnClick}></button>
-                        <button name="engineer" onClick={btnClick}></button>
-                        <button name="specialist" onClick={btnClick}></button>
+                        <CircularButtons name="commander" onClick={btnClick}/>
+                        <CircularButtons name="pilot" onClick={btnClick}/>
+                        <CircularButtons name="engineer" onClick={btnClick}/>
+                        <CircularButtons name="specialist" onClick={btnClick}/>
                     </div>
                 </div>
         
